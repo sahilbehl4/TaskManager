@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DZP-WM-h2J">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tasks View Controller-->
+        <scene sceneID="giW-FE-22v">
+            <objects>
+                <viewController id="DZP-WM-h2J" customClass="TasksViewController" customModule="TaskManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1j1-Tt-rDH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BMM-tM-MLW" customClass="TableView" customModule="TaskManager" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BMM-tM-MLW" firstAttribute="top" secondItem="Amz-2K-Wqn" secondAttribute="top" id="FgR-uf-ebf"/>
+                            <constraint firstItem="Amz-2K-Wqn" firstAttribute="bottom" secondItem="BMM-tM-MLW" secondAttribute="bottom" id="jFP-Fz-tY4"/>
+                            <constraint firstItem="Amz-2K-Wqn" firstAttribute="trailing" secondItem="BMM-tM-MLW" secondAttribute="trailing" id="kuW-1F-Znk"/>
+                            <constraint firstItem="BMM-tM-MLW" firstAttribute="leading" secondItem="Amz-2K-Wqn" secondAttribute="leading" id="nVp-Ee-b2w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Amz-2K-Wqn"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="BMM-tM-MLW" id="aun-vO-uRk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZYA-al-3be" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="75"/>
+        </scene>
+        <!--AddTask-->
+        <scene sceneID="9PY-7f-Eic">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddTask" id="pfB-CI-90K" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QxF-Nw-VIK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007" y="46"/>
+        </scene>
+    </scenes>
+</document>
